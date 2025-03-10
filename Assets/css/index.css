@@ -1,0 +1,25 @@
+*{
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.log{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: green;
+}
+.log:hover{
+    color: red;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+    text-align: center;
+    margin-right: 50px;
+}
