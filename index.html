@@ -14,8 +14,19 @@
     />
   </head>
   <body>
+    <div><h2>Select categories</h2></div>
+    <div>
+        <form action="/search" method="get">
+            <input class="seaarch" type="text" name="query" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
     <div class="log">
-      <h1><i class="fa-solid fa-list"></i>ALL categories</h1>
+        <div class="menu">
+            <i class="fa-solid fa-list menu-icon"></i>
+            <h1>ALL categories</h1> 
+        </div>
+      
       <ul class="nav">
         <li>HOME</li>
         <li>SHOP</li>
@@ -23,6 +34,13 @@
         <li>PAGES</li>
         <li>CONTACT</li>
       </ul>
+    </div>
+    <div class="icon">
+        <ul>
+            <li><i class="fa-solid fa-circle-user"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-regular fa-heart"></i></li>
+        </ul>
     </div>
   </body>
 </html>

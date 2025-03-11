@@ -1,5 +1,7 @@
 *{
-   
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 100vw;
@@ -8,18 +10,81 @@ body{
 }
 .log{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(24, 136, 24);
+    padding: 20px 0px;
 }
-.log:hover{
-    color: red;
+
+.menu {
+    display: flex;
+    align-items: center;
 }
+
+.menu i {
+    height: 20px;
+}
+
 .nav{
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: space-around;
     width: 50%;
+    list-style: none;
+
     text-align: center;
-    margin-right: 50px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 15px 40px;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 18px;
+}
+
+form button {
+    padding: 18px 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: rgb(24, 136, 24);;
+    font-size: 15px;
+    transition: .5s;
+}
+
+
+form button:hover {
+    background-color: orangered;
+}
+.nav li:hover{
+    color: red;
+    transition: .5s;
+}
+.nav li{
+    font-weight: bold;
+}
+.icon ul li{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0px;
+    
+}
+.icon ul li:hover{
+    color: green;
+}
+h2{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    
+   
 }
