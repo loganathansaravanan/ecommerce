@@ -56,6 +56,8 @@ h5{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+
 }
 
 form{
@@ -64,6 +66,7 @@ form{
     justify-content: center;
     margin: 30px 0px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 form input {
@@ -76,7 +79,7 @@ form input {
 }
 
 form button {
-    padding: 18px 30px;
+    padding: 18px 30px 10px 10px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;
@@ -111,7 +114,8 @@ form button:hover {
 }
 
 .icon ul li:hover{
-    color: red;
+    color: red; 
+    transition: .5s;
 }
 .fold{
     font-size: 15px;
@@ -126,4 +130,30 @@ form button:hover {
 }
 .fold:hover{
     background-color: green;
+    transition: .5s;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+} 
+span{
+    color: green;
+}
+.button{
+    
+    padding: 15px 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(13, 196, 13);
+    border: none;
+}
+.button:hover{
+    background-color: orangered;
+    transition: .5s;
+
 }
