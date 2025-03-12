@@ -157,3 +157,20 @@ span{
     transition: .5s;
 
 }
+.content{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.photo{
+    display: flex;
+    height: 475px;
+    justify-content: space-evenly;
+}
+.bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+}
