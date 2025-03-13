@@ -8,7 +8,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
 }
-h5{
+.front{
     text-align: center;
     background-color: orangered;
     /* height: 50px; */
@@ -172,5 +172,43 @@ span{
     align-items: center;
     justify-content: space-around;
     margin-left: 20px;
+    
+}
+.center{
+    text-align: center;
+}
+/* .con li{
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    
+}
+.con{
+    display: flex;
+    text-align: center;
+} */
+.con {
+    display: flex;
+    width: 200px; 
+    margin: 0 auto; 
+    list-style-type: none; 
+    padding: 0; 
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+}
+li {
+    text-align: center; 
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.con li:hover{
+    color: orangered;
+    transition: .5s;
+}
+.furit-veg{
+    height: 250px;
+    display: flex;
     
 }
