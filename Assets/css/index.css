@@ -187,13 +187,25 @@ span{
     grid-gap: 10px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
 
 }
 .photo2 div img{
     width: 300px;
     height: 100%;
+    transition: 1s;
 }
+.hro:hover img{
+    transform: scale(1.1);
+}
+.hr1:hover img{
+    transform: scale(1.1);
+}
+.hr2:hover img{
+    transform: scale(1.1);
+}
+
 .bot{
     display: flex;
     align-items: center;
@@ -204,16 +216,7 @@ span{
 .center{
     text-align: center;
 }
-/* .con li{
-    text-align: center;
-    list-style: none;
-    align-items: center;
-    
-}
-.con{
-    display: flex;
-    text-align: center;
-} */
+
 .con {
     display: flex;
     width: 200px; 
@@ -252,39 +255,6 @@ li {
     box-shadow: 2px 2px 7px;
 }
 
-/* .box{
-    height: 10px;
-    width: 100px;
-    display: grid;
-    grid-template-columns: repeat(4,2fr);
-    grid: 10px;
-}
-.main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: yellow;
-}
-img{
-    width: 100%;
-}
-.main1{
-    width: 80%;
-    height: 100%;
-    background-color: green;
-}
-.images{
-    /* width: 100%;
-    height: 70%;
-    background-color: aqua; */
-/* }
-.box{
-    width: 300px;
-    height: 370px;
-    background-color: blue;
-} */
 
 .cart{
     width: 100%;
@@ -315,12 +285,15 @@ img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: .5s;
+    
 } 
 .images{
     width: 100%;
     height: 70%;
     /* background-color: aqua; */
     display: flex;
+    overflow: hidden;
 
 }
 .cont{
@@ -420,6 +393,7 @@ img{
     position: absolute;
     top: 5%;
     left: 5%;
+    
 }
 .but button{
     border-radius: 9px;
@@ -428,18 +402,7 @@ img{
     color: whitesmoke;
 }
 
-/* .fie{
-    position: fixed;
-    width: 100%;
-    height: 10%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
 
-}
-.fie{
-    
-} */
 
 .third{
     width: 100%;
@@ -462,28 +425,33 @@ img{
 .third2{
     width: 100%;
     height: 100%;
-    background-color:azure;
+    background-color:#f7f7f7;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 18px;
     display: flex;
+    overflow: hidden;
+    position: relative;
+     
     
 }
 .third3{
     display: flex;
     width: 100%;
     height: 100%;
-    position: relative;
+   
+    
 }
-.third3 img{
+
+ .third3 img{
     width: 100%;
     height: 200px;
     object-fit: contain;
    
-    
+ }
+     
 
-}
 .third4 i {
     font-size: 20px;
     position: absolute;
@@ -507,3 +475,91 @@ img{
     left: 75%;
     font-size: 20px;
 }
+.im{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    position: relative;
+    overflow: hidden;
+}
+
+.im2{
+    transition: 1s;
+    overflow: hidden;
+}
+.third3:hover .im2{
+    transform: scale(1.1);
+}
+.im3{
+    transition: 1.5s;
+}
+.third3:hover .im3{
+    transform: scale(1.1);
+}
+.im4{
+    transition: 1s;
+}
+.third3:hover .im4{
+    transform: scale(1.1);
+    
+}
+.images:hover img{
+    transform: scale(1.1);
+}
+.but button::before{
+    content: "";
+    background-color: black;
+    z-index: -1;
+}
+.but button:hover{
+    color: red;
+}
+button {
+    padding: 10px 10px;
+    color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+button::before{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: orangered;
+   top: 0;
+   left: -100%;
+   transition: 1s;
+   z-index: -1;
+
+}
+button:hover::before{
+    left: 0;
+    
+}
+button:hover{
+    color: black;
+}
+.dot .im{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+.dot:hover.im{
+    transform: scale(1.1);
+    position: absolute;
+}
+
+/* .dot .im1{
+    position: absolute;
+    transform: translate(-100%,-100%);
+   
+}
+.dot:hover.im1{
+    transform: translate(0,0);
+    z-index: 1;
+    
+
+} */
