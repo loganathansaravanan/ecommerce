@@ -143,6 +143,16 @@ form button:hover {
     margin-left: 20px;
     
 } 
+.frist-img{
+    /* overflow: hidden; */
+}
+.imge{
+    transition: 1s;
+}
+.imge:hover{
+    transform: scale(1.1);
+    
+}
 span{
     color: green;
 }
@@ -249,17 +259,15 @@ li {
 }
 
 .box {
-    border: solid 1px black;
+    border: solid 1px white;
     border-radius: 10%;
     padding: 5px;
-    box-shadow: 2px 2px 7px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 
 .cart{
     width: 100%;
-    /* height: 100%; */
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +275,7 @@ li {
 .cart1{
     width: 88%;
     height: 100%;
-    /* background-color: green; */
+
     display: grid;
     grid-template-columns: repeat(4,2fr);
     grid-gap: 30px;
@@ -277,7 +285,6 @@ li {
 .box{
     width: 100%;
     height: 320px;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
 }
@@ -291,7 +298,6 @@ li {
 .images{
     width: 100%;
     height: 70%;
-    /* background-color: aqua; */
     display: flex;
     overflow: hidden;
 
@@ -347,6 +353,7 @@ li {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    
 
 }
 .car1{
@@ -356,11 +363,22 @@ li {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    
 }
 .car2{
     width: 100%;
+    height: 350px;
+   
+    overflow: hidden;
+    background-color: red;
+    
+}
+
+.car2 img{
+    transition: 1s;
     height: 100%;
-    gap: 10px;
+    width: 100%;
+
 }
 .car3{
     width: 100%;
@@ -371,6 +389,10 @@ li {
 .car2 {
     position: relative;
     display: inline-block;
+    
+}
+.car2 img:hover{
+    transform: scale(1.1);
 }
 
 .cart-info {
@@ -552,14 +574,163 @@ button:hover{
     position: absolute;
 }
 
-/* .dot .im1{
-    position: absolute;
-    transform: translate(-100%,-100%);
-   
-}
-.dot:hover.im1{
-    transform: translate(0,0);
-    z-index: 1;
-    
 
-} */
+
+.ban{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.ban1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    
+   
+
+}
+.ban2{
+    width: 100%;
+    position: relative; 
+    overflow: hidden;  
+  
+}
+
+.ban2 img {
+    transition: 1s;
+}
+
+.ban2 img:hover{
+    transform: scale(1.1);
+}
+.ban3{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    width: 250px;
+}
+.ban3 p span{
+    font-size: 30px;
+}
+.ban3 p{
+    font-size: 18px;
+}
+.dot img:hover{
+    transform: scale(1.1);
+}
+.recent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.recent h2{
+    font-size: 30px;
+}
+.recent h5{
+    font-size: 18px;
+}
+.write3 img{
+    width: 300px;
+    
+}
+.write{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+.write1{
+    width: 88%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.write2{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:#f7f7f7;
+border: 1px solid white;
+border-radius: 30px;
+box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    
+}
+.peas{
+    width: 100%;
+    height: 10%;
+    background-color:#f7f7f7;
+  
+}
+.peas1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.last{
+    margin-top: 180px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.last1{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.last2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: ;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+}
+.last2 h2{
+    color: green;
+}
+.last2 h1{
+    width: 500px;
+    font-weight: 500;
+}
+.last2 p{
+    width: 500px;
+}
+.last3{
+    width: 100%;
+    overflow: hidden;
+}
+.last3 img{
+    height: 420px;
+    transition: .5s;
+}
+.last3 img:hover{
+    transform: scale(1.1);
+
+}
