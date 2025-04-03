@@ -2,8 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Concert One", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 body {
@@ -53,8 +51,13 @@ body {
   justify-content: space-around;
   width: 50%;
   list-style: none;
-
   text-align: center;
+}
+.nav button{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: green;
+  border: none;
 }
 
 .main-bar {
@@ -117,12 +120,15 @@ form button:hover {
   color: red;
   transition: 0.5s;
 }
-.fold {
+.fold h2{
   font-size: 15px;
+}
+.fold {
+  font-size: 1px;
   border: 1px solid gray;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 16px 40px;
+  padding: 10px 10px;
   background-color: gainsboro;
   border: none;
   font-size: 18px;
@@ -173,13 +179,8 @@ span {
   color: green;
 }
 .button {
-  padding: 15px 50px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: rgb(13, 196, 13);
-  border: none;
+ border-radius: 10px;
+ background-color: green;
 }
 .button:hover {
   background-color: orangered;
@@ -202,39 +203,35 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  margin-left: 150px;
   overflow: hidden;
   align-items: center;
   justify-content: space-around;
   display: flex;
 }
 .apple2 {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
+
+
 .apple2 img {
-  width: 250px;
+  width: 220px;
   height: 100%;
   transition: 1s;
   background-color: #f5f5f5;
   overflow: hidden;
 }
-.apple2:hover img {
+
+.apple2 img:hover {
   transform: scale(1.1);
 }
-.apple3 {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10px;
-  font-size: 18px;
-}
+
 
 .center {
   text-align: center;
@@ -278,7 +275,7 @@ li {
 }
 
 .cart {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,6 +414,7 @@ li {
 }
 .but button {
   border-radius: 9px;
+  border: none;
   width: 50px ;
   background-color: green;
   color: whitesmoke;
@@ -424,7 +422,7 @@ li {
 }
 
 .third {
-  width: 100%;
+  width: auto;
   /* height: 100%; */
   /* background-color: red; */
   display: flex;
@@ -523,15 +521,16 @@ li {
 .but button:hover {
   color: red;
 }
-button {
-  padding: 10px 10px;
-  color: black;
+.button {
+  padding: 10px 15px;
   color: white;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-top: 20px;
+  border: none;
 }
-button::before {
+.button::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -542,11 +541,8 @@ button::before {
   transition: 1s;
   z-index: -1;
 }
-button:hover::before {
+.button:hover::before {
   left: 0;
-}
-button:hover {
-  color: black;
 }
 .dot .im {
   width: 100%;
@@ -619,8 +615,7 @@ button:hover {
   font-size: 18px;
 }
 .write3 img {
-  width: 300px;
-  height: 320px;
+  width: 100%;
   transition: 1s;
 }
 .write3:hover img {
@@ -635,7 +630,7 @@ button:hover {
   flex-direction: column;
 }
 .write1 {
-  width: 88%;
+  width: 80%;
   height: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -662,7 +657,7 @@ button:hover {
 }
 .peas {
   width: 100%;
-  height: 10%;
+  height: 40%;
   background-color: #f7f7f7;
 }
 .peas1 {
@@ -746,11 +741,11 @@ button:hover {
 }
 .last-content {
   width: 100%;
-  height: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 20px;
+ 
 }
 .last-content1 {
   width: 85%;
@@ -767,24 +762,26 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+   position: relative;
 }
 .last-content2 img {
-  height: 320px;
+  width: 250px;
+  height: 200px;
   transition: 1s;
 }
 .last-content3 {
-  width: 80%;
-  height: 35%;
+  width:250px ;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 14px;
   gap: 10px;
   padding: 20px;
   background-color: wheat;
-  overflow: hidden;
 }
-.last-content2:hover img {
+.last-content2:hover.last-content2 img {
   transform: scale(1.1);
 }
 .ship {
@@ -805,22 +802,35 @@ button:hover {
   margin-right: 80px;
 }
 .ship2 {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   gap: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column; */
 }
-.ship2 div {
-  width: 300px;
-  height: 300px;
-  align-content: center;
+.ship2  {
+  width: 250px;
+  height: 200px;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   background-color: #f7f7f7;
   animation: ship 5s infinite;
+  gap: 20px;
+}
+.ship2 i{
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color:wheat;
+
+
 }
 @keyframes ship {
   0% {
@@ -1009,11 +1019,13 @@ button:hover {
   }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
   body{
     width: 100vw;
     height:100vh;
+    box-sizing: border-box;
     overflow-x: hidden;
+   
   }
   .fie{
     width: 100%;
@@ -1022,8 +1034,14 @@ button:hover {
     width:100%;
     flex-wrap: wrap;
   }
+  .main-bar form{
+    width: 100%;
+  }
+  .main-bar input{
+    width: 70%;
+  }
   .fold{
-    padding: 16px 9px;
+    width: auto;
   }
   .log{
     width: 100%;
@@ -1034,8 +1052,17 @@ button:hover {
   .nav{
     width: 100%;
   }
+  .log{
+    padding: 20px;
+  }
+  .nav{
+    margin-top: 10px;
+  }
+  .cart-info p{
+    width: 70%;
+  }
   .text{
-    width:100%;
+    width:auto;
     flex-wrap: wrap-reverse;
   }
   .imge{
@@ -1119,17 +1146,17 @@ button:hover {
   flex-wrap: wrap-reverse;
  }
  .last3 img{
-  width: 300px;
+  width: 100%;
   height: 300px;
  }
  .last2 h2{
-  width: 300px;
+  width: 100%;
  }
  .last h1{
-  width: 400px;
+  width: 100%;
  }
  .last p{
-  width: 400px;
+  width: 100%;
  }
  .last-content{
   width: 100%;
@@ -1152,10 +1179,45 @@ button:hover {
  .ship{
   width: 100%;
  }
- .ship2{
-  flex-wrap: wrap;
+ .ship1{
+  flex-direction: column;
+  gap: 10px;
+ }
+ .car2 img{
+  width: 100%;
+ }
+ .box{
+  width: 100%;
+ }
+ .write3 img{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .write1{
+  width: 100%;
+ }
+ .peas{
+  border-radius: 20px;
+ }
+
+ .peas1{
+  margin-top: 20px;
+  width: 100%;
+  height: 10%;
+ }
+ .log{
+  display: block;
+ }
+ .last-footer{
+  display: none;
  }
 }
 .for p{
-  width:500px;
+  width: 100%;
 }
+
+
+
