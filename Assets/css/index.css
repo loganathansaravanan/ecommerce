@@ -238,13 +238,11 @@ span {
 }
 
 .con {
+  width: 100%;
   display: flex;
-  width: 200px;
-  margin: 0 auto;
-  list-style-type: none;
-  padding: 0;
-  justify-content: space-between;
-  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
   margin-top: 20px;
 }
 li {
@@ -1213,6 +1211,15 @@ li {
  }
  .last-footer{
   display: none;
+ }
+ .prduct-section{
+  width: auto;
+ }
+ .prduct-section h5 h3 ul{
+  width: 100%;
+ }
+ .con{
+  width: auto;
  }
 }
 .for p{
