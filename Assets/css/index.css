@@ -33,7 +33,6 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  background-color: rgb(12, 124, 12);
   gap: 5px;
   height: 60px;
   padding: 0px 10px;
@@ -52,12 +51,13 @@ body {
   width: 50%;
   list-style: none;
   text-align: center;
+  gap: 7px;
 }
 .nav button{
   border-radius: 10px;
   padding: 10px;
-  background-color: green;
   border: none;
+  width: 100%;
 }
 
 .main-bar {
@@ -365,9 +365,7 @@ li {
 .car2 {
   width: 100%;
   height: 350px;
-
   overflow: hidden;
-  background-color: red;
 }
 
 .car2 img {
@@ -478,7 +476,7 @@ li {
 }
 .third5 h1 {
   position: absolute;
-  left: 75%;
+  left: 70%;
   font-size: 20px;
 }
 .im {
@@ -998,21 +996,21 @@ li {
 }
 @keyframes last {
   0% {
-    transform: translate(50px, 20px);
+    /* transform: translate(50px, 20px); */
     color: white;
   }
   25% {
-    transform: translate(50px, 20px);
+    /* transform: translate(50px, 20px); */
   }
   50% {
-    transform: translate(50px, 20px);
+    /* transform: translate(50px, 20px); */
     color: black;
   }
   75% {
-    transform: translate(50px, 20px);
+    /* transform: translate(50px, 20px); */
   }
   100% {
-    transform: translate(50px, 20px);
+    /* transform: translate(50px, 20px); */
     color: white;
   }
 }
@@ -1092,11 +1090,11 @@ li {
   flex-wrap: wrap;
  }
  .cart{
-  width: 100%;
+  width: auto;
   padding: 20px;
  }
  .cart1{
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: max-content;
   width: 100%;
  }
  .third{
@@ -1183,9 +1181,11 @@ li {
  }
  .car2 img{
   width: 100%;
+  object-fit: contain;
  }
  .box{
   width: 100%;
+  object-fit: contain;
  }
  .write3 img{
   height: 200px;
@@ -1210,16 +1210,71 @@ li {
   display: block;
  }
  .last-footer{
-  display: none;
+  width: auto;
+  padding: 20px;
+  height: auto;
+  background-size: cover;
  }
+
+
+.last-footer1{
+  width: 100%;
+}
+.last-footer2{
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+.last-footer3{
+  width:100%;
+  justify-content: flex-start;
+height: auto;
+
+}
+.last-footer5{
+width: 100%;
+align-items: flex-start;
+}
+.last-footer6{
+  width:100%;
+  margin: 0;
+  justify-content:flex-start;
+}
+
  .prduct-section{
   width: auto;
+ }
+ .last-footer4{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+
  }
  .prduct-section h5 h3 ul{
   width: 100%;
  }
+ .last-footer4 ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.last-footer4 ul li{
+  text-align: start;
+}
  .con{
   width: auto;
+ }
+ .ban2 img{
+  width: 100%;
+  height: 200px;
+ }
+ .ban3 p{
+  width: 67%;
  }
 }
 .for p{
