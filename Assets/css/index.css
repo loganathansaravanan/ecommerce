@@ -191,6 +191,9 @@ span {
   margin-bottom: 20px;
   margin-top: 30px;
 }
+.for p{
+  width: 400px;
+}
 .apple {
   width: 100%;
   display: flex;
@@ -1215,7 +1218,7 @@ li {
   height: auto;
   background-size: cover;
   background: none;
-  background-color: orangered;
+  background-color: orangered ;
  }
 
 
@@ -1279,9 +1282,5 @@ align-items: flex-start;
   width: 67%;
  }
 }
-.for p{
-  width: 100%;
-}
-
 
 
