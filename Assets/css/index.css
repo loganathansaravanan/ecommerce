@@ -476,7 +476,7 @@ li {
 }
 .third5 h1 {
   position: absolute;
-  left: 70%;
+  left: 67%;
   font-size: 20px;
 }
 .im {
@@ -1214,6 +1214,8 @@ li {
   padding: 20px;
   height: auto;
   background-size: cover;
+  background: none;
+  background-color: orangered;
  }
 
 
